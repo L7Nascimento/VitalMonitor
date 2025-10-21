@@ -1,0 +1,79 @@
+# VitalMonitor
+
+## Descrição do Projeto
+VitalMonitor é um sistema de monitoramento clínico voltado para captação, análise e interpretação de sinais vitais de pacientes.  
+O sistema permite registrar medições, calcular o **MEWS (Modified Early Warning Score)**, detectar deterioração clínica e gerar relatórios detalhados para acompanhamento contínuo.  
+
+O objetivo é criar uma ferramenta educacional e funcional que demonstre boas práticas de programação em Java, lógica clínica e controle de versão com Git/GitHub.
+
+---
+
+## Funcionalidades
+
+- Cadastro de pacientes com informações básicas (nome, idade, sexo, histórico clínico).  
+- Registro de sinais vitais: pressão arterial, frequência cardíaca, frequência respiratória, temperatura, saturação de oxigênio e hora da coleta.  
+- Cálculo automático do **MEWS** com classificação de risco (baixo, moderado, alto).  
+- Comparação das medições das últimas 5 horas para detectar tendência de deterioração.  
+- Emissão de alertas quando os sinais vitais indicam risco de piora.  
+- Geração de relatórios de histórico e alertas em formato legível (TXT ou CSV).  
+
+---
+
+## Estrutura do Projeto
+
+/src
+├── model/ # Classes de dados (Paciente, SinaisVitais, MEWS)
+├── controller/ # Lógica de monitoramento, cálculo de MEWS, alertas
+├── view/ # Interface de usuário (console ou futura GUI)
+└── utils/ # Persistência de dados e utilitários
+
+
+---
+
+## Tecnologias Utilizadas
+
+- Java 17+  
+- Git/GitHub (versionamento e controle de histórico)  
+- JSON/CSV para persistência inicial  
+- IntelliJ IDEA ou VS Code para desenvolvimento  
+
+---
+
+## Como Rodar o Projeto
+
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/seuusuario/VitalMonitor-Java.git
+2. Abra no IntelliJ ou VS Code.
+3. Compile e execute a classe principal (Main.java ou equivalente).
+4. Siga o menu de console para cadastrar pacientes, registrar sinais vitais e gerar relatórios.
+
+## Próximas Evoluções / Roadmap do Projeto
+
+- [x] Criar repositório inicial e primeiro commit (README.md)
+- [x] Estrutura básica do projeto (pacotes model, controller, view, utils)
+- [x] Classe Paciente com atributos básicos e histórico de sinais vitais
+- [x] Classe SinaisVitais com atributos: pressão, FC, FR, temperatura, SpO₂ e timestamp
+- [ ] Implementação inicial do cálculo do MEWS
+- [ ] Comparação das últimas 5 horas de sinais vitais
+- [ ] Sistema de alertas de deterioração baseado em MEWS e tendências
+- [ ] Persistência de dados em arquivos JSON ou CSV
+- [ ] Geração de relatórios históricos e de alertas
+- [ ] Interface de usuário em console para cadastro e registro de sinais
+- [ ] Interface gráfica (JavaFX ou Swing) para monitoramento mais intuitivo
+- [ ] Persistência avançada com banco de dados SQLite ou PostgreSQL
+- [ ] Exportação de relatórios em PDF (usando iText ou Apache PDFBox)
+- [ ] Testes unitários com JUnit para todas as classes e métodos críticos
+- [ ] Documentação detalhada do código (Javadoc)
+- [ ] Aprimoramento do sistema de alertas: notificações em tempo real
+- [ ] Melhorias na lógica de análise de tendências e pontuação MEWS
+
+
+# Autor
+
+Leandro Th. Nascimento
+Técnico em Enfermagem | Entusiasta em programação e lógica clínica focado em JAVA em transição de carreira para TECH.
+
+# Licença
+
+Projeto livre para fins educacionais e de estudo.
